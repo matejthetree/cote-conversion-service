@@ -6,4 +6,5 @@ const request = { type: 'update rate', currencies: 'usd_eur', rate: 0.88 };
 
 requester.send(request, (res) => {
   console.log(res);
+  process.exit(1);
 });

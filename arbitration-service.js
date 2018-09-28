@@ -7,7 +7,7 @@ const rates = {};
 
 responder.on('update rate', (req, cb) => {
   rates[req.currencies] = req.rate;
-  cb('OK!');
+  cb(`changed ${req.currencies} rate to ${req.rate}`);
 
   publisher.publish('rate updated', req);
 });
