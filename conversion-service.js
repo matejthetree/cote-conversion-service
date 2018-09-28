@@ -10,6 +10,6 @@ subscriber.on('rate updated', (update) => {
 });
 
 responder.on('convert', (req, cb) => {
-  let convertedRate = req.amount * rates[`${req.from}_${req.to}`]
+  const convertedRate = req.amount * rates[`${req.from}_${req.to}`];
   cb(`${req.amount} ${req.from} => ${convertedRate} ${req.to}`);
 });
