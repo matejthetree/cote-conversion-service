@@ -7,10 +7,12 @@ run `npm install`
 ## Demo
 
 Open terminal. In one tab run `node conversion-service.js`
-In another tab run `node arbitration-service.js`
+In new tab run `node arbitration-service.js`
 
-Now our services are running. To test that, lest start our client.
-In another tab run `node client.js`
+Now our services are running.
+To test that, let's start our client.
+
+In new tab run `node client.js`
 
 Your output should be
 
@@ -18,13 +20,13 @@ Your output should be
 
 
 
-Let us try to change the `usd_eur` rate.
+Let's try to change the `usd_eur` rate.
 run `node admin.js`
 Your output should be
 
  `changed usd_eur rate to 0.88`
 
-To verify that the conversion-service is indeed subscribed to arbitration service, let us run `node client.js` one more time.
+To verify that the conversion-service is indeed subscribed to arbitration service, let's run `node client.js` one more time.
 
 If your output was indeed
 
